@@ -1,7 +1,21 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = de_DE
 
-%% Dies gibt Warnungen aus, sollten veraltete LaTeX-Befehle verwendet werden
+%
+% Ein ausführliches Beispiel zum Setzen der Kurzfassung zum
+% GI-Dissertationspreis gemäß der Vorgaben unter
+% https://gi.de/dissertationspreis
+%
+% Abgeleitet von
+% https://github.com/gi-ev/LNI/blob/5ce2a334c17dd4496a1f56a469d5ce1fc84cee0c/lni-paper-example-de.tex
+%
+% Bei Fragen und Problemen:
+% https://github.com/nm-wu/GIDiss-Beispiel/issues
+%
+% stefan.sobernig@wu.ac.at, Jan 2022
+%
+
+%%Dies gibt Warnungen aus, sollten veraltete LaTeX-Befehle verwendet werden
 \RequirePackage[l2tabu, orthodox]{nag}
 
 \documentclass[utf8,biblatex,norunningheads]{lni}
@@ -47,13 +61,14 @@
   deutscher Sprache.\footnote{Ggfs. Titel der Dissertation in englischer
     Sprache: ``Original title in English''}}
 \author[Vorname Nachname]
-{Vorname1 Nachname1\footnote{Universität, Abteilung, Straße, Postleitzahl Ort, Land \email{emailaddress@author1}}}
+{Vorname Nachname\footnote{Universität, Abteilung, Straße, Postleitzahl Ort, Land \email{emailaddress@author1}}}
 
 \maketitle
 
 \begin{abstract}
-\todo{Der Abstract gibt einen kurzer Überblick über die Kurzfassung mit ca. 10
-Zeilen.} \blindtext
+  \todo{
+    Der Abstract gibt einen kurzer Überblick über die Kurzfassung mit
+    ca. 10 Zeilen.} \blindtext
 \end{abstract}
 
 \section{Einleitung}
@@ -165,6 +180,6 @@ und
 \begin{wrapfigure}{l}{.25\textwidth}
 \includegraphics[angle=90,origin=c,width=.25\textwidth]{example-image-empty}
 \end{wrapfigure}
-\textbf{Vorname Nachname} wurde geboren am 1. Januar 1970 geboren. \blindtext
+\noindent\todo{\textbf{Vorname Nachname} wurde am 1. Januar 1970 geboren.} \blindtext
 
 \end{document}
