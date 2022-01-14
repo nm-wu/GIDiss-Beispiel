@@ -1,0 +1,4 @@
+[submodule "lni"]
+	path = lni
+	url = git@github.com:nm-wu/LNI.git
+	branch = main
