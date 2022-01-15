@@ -18,5 +18,6 @@ jobs:
         with:
           run: |
             apk add make
+            apk add zip
             make pdf
             make zip
