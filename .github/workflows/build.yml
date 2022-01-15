@@ -1,0 +1,22 @@
+name: Build and release GI Diss assets
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up sources
+        uses: actions/checkout@v2
+      - name: Build assets
+        uses: xu-cheng/texlive-action/full@v1
+        with:
+          run: |
+            apk add make
+            make pdf
+            make zip
