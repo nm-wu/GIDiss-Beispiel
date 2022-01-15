@@ -1,6 +1,8 @@
 FILE=gidiss-kurzfassung
 DIR=$(shell basename $(CURDIR))
 
+export TEXINPUTS=lni//:
+
 %.pdf: %.tex %.bib
 	pdflatex $<
 	biber ${FILE}	
