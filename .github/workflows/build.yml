@@ -24,7 +24,7 @@ jobs:
             make pdf
             make zip
       - name: Release as latest
-         uses: pyTooling/Actions/releaser@main
+        uses: pyTooling/Actions/releaser@main
          with:
            token: ${{ secrets.GITHUB_TOKEN }}
            tag: latest
