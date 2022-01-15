@@ -25,10 +25,10 @@ jobs:
             make zip
       - name: Release as latest
         uses: pyTooling/Actions/releaser@main
-         with:
-           token: ${{ secrets.GITHUB_TOKEN }}
-           tag: latest
-           rm: true
-           files: |
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: latest
+          rm: true
+          files: |
              *.pdf
              *.zip
