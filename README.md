@@ -6,7 +6,7 @@
 - Falls der Titel mehr als 65 Zeichen umfasst, wird noch ein gesonderter Kurztitel gebraucht, der in der Kopfzeile des Bands erscheinen wird. Dieser Kurztitel ist wie folgt zu setzen:
   `\title[<Kurztitel mit weniger oder gleich 65 Zeichen>]{<Langtitel mit mehr als 65 Zeichen>}`
 - In einer weiteren Fußnote zu Ihrem Namen sollten Sie Ihre Affiliation und Emailadresse als Kontaktdaten angeben.
-- Der Beitrag ist in LaTeX mit der Dokumentklasse [`lni`](https://github.com/gi-ev/LNI) zu erstellen. Es wird vorausgesetzt, dass diesem Beispieldokument ausgegangen wird.
+- Der Beitrag ist in LaTeX mit der Dokumentklasse [`lni`](https://github.com/gi-ev/LNI) zu erstellen. Es wird vorausgesetzt, dass von diesem Beispieldokument ausgegangen wird.
 - Der Umfang muss genau 10 Seiten sein (inklusive Literaturverzeichnis und Lebenslauf, sh. unten)
 - Am Beginn des Beitrags ist eine kurze Zusammenfassung ("Abstract", ca. 10 Zeilen).
 - Das Literaturverzeichnis muss eine Referenz auf die publizierte Dissertation enthalten.
