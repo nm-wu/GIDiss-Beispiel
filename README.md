@@ -6,7 +6,7 @@
 - Falls der Titel mehr als 65 Zeichen umfasst, wird noch ein gesonderter Kurztitel gebraucht, der in der Kopfzeile des Bands erscheinen wird. Dieser Kurztitel ist wie folgt zu setzen:
   `\title[<Kurztitel mit weniger oder gleich 65 Zeichen>]{<Langtitel mit mehr als 65 Zeichen>}`
 - In einer weiteren Fußnote zu Ihrem Namen sollten Sie Ihre Affiliation und Emailadresse als Kontaktdaten angeben.
-- Der Beitrag ist in LaTeX mit der Dokumentklasse `lni` zu erstellen. Es wird vorausgesetzt, dass diesem Beispieldokument ausgegangen wird.
+- Der Beitrag ist in LaTeX mit der Dokumentklasse [`lni`](https://github.com/gi-ev/LNI) zu erstellen. Es wird vorausgesetzt, dass diesem Beispieldokument ausgegangen wird.
 - Der Umfang muss genau 10 Seiten sein (inklusive Literaturverzeichnis und Lebenslauf, sh. unten)
 - Am Beginn des Beitrags ist eine kurze Zusammenfassung ("Abstract", ca. 10 Zeilen).
 - Das Literaturverzeichnis muss eine Referenz auf die publizierte Dissertation enthalten.
@@ -15,3 +15,9 @@
   - Üblicherweise mit Porträtbild, auf der linken Seite, vom Text umflossen. 
   - Der Lebenslauf hat keinen Titel, beginnt jedoch mit dem fett gesetzten Namen des Autors.
   - Es empfielt sich ein fliessender Text für den Lebenslauf, d.h. keine Tabelle.
+# Hinweise
+- [Allgemeine Richtlinien für LNI-AutorInnen](https://gi.de/fileadmin/GI/Hauptseite/Service/Publikationen/LNI/LNI-Autorenrichtlinien.docx)
+- [Leitfaden zur LNI-Dokumentenklasse](http://mirrors.ctan.org/macros/latex/contrib/lni/lni-instructions.pdf)
+# Kontakt
+- Fragen und Hilfestellung: Schalten Sie einen [Diskussionsbeitrag](https://github.com/nm-wu/GIDiss-Beispiel/discussions/new)!
+- Problem- und Fehlerberichte: Stellen Sie ein [Ticket](https://github.com/nm-wu/GIDiss-Beispiel/issues/new/choose) ein!
