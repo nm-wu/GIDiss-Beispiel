@@ -15,22 +15,41 @@
 % stefan.sobernig@wu.ac.at, Jan 2022
 %
 
-%%Dies gibt Warnungen aus, sollten veraltete LaTeX-Befehle verwendet werden
+%% Dies gibt Warnungen aus, sollten veraltete LaTeX-Befehle verwendet werden
 \RequirePackage[l2tabu, orthodox]{nag}
 
-\documentclass[utf8,biblatex,norunningheads]{lni}
-\bibliography{gidiss-kurzfassung}
+%% GIDiss: Als letzten Schritt, vor Einreichung, die Option
+%% "draft" (verpflichtend!) entfernen. Alle anderen Optionen unberührt lassen, vor
+%% allem "utf8" und "norunningheads"!
 
-%% Schöne Tabellen mittels \toprule, \midrule, \bottomrule
-\usepackage{booktabs}
+\documentclass[draft,utf8,biblatex,norunningheads]{lni}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% GIDiss: Präambel (verpflichend)
+%% GIDiss: NACH dieser Kommentarzeile nichts verändern! 
 \usepackage{wrapfig}
+\usepackage[backgroundcolor=yellow,obeyDraft=true]{todonotes}
+\setuptodonotes{inline}
+\makeatletter
+\AtBeginDocument {
+  \hypersetup{
+    pdfinfo={
+      Shorttitle={\@shorttitle}
+    }
+  }
+ }
+ \makeatother
+ %% GIDiss: VOR dieser Kommentarzeile nichts verändern!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% GIDiss-Beispiel: Zu Demonstrationszwecken (Bitte entfernen oder auskommentieren!)
+%% GIDiss: Zu Demonstrationszwecken (kann belassen, entfernt, oder
+%% auskommentiert werden!)
 \usepackage[math]{blindtext}
 \usepackage{mwe}
-\usepackage{color,soulutf8}
-\newcommand{\todo}[1]{\hl{\textsc{todo}: #1}}
 
+%% LNI: Optionales
+%% Schöne Tabellen mittels \toprule, \midrule, \bottomrule
+\usepackage{booktabs}
 
 %% BibLaTeX-Sonderkonfiguration,
 %% falls man schnell eine existierende Bibliographie wiederverwenden will, aber nicht die .bib-Datei händisch anpassen möchte.
@@ -55,15 +74,26 @@
 }
 \fi
 
-\begin{document}
-%%% Die Fußnote enthält die Adresse (Affiliation) sowie eine E-Mail-Adresse.
-\title{Sehr langer Titel der Dissertation bzw. der Kurzfassung in
-  deutscher Sprache.\footnote{Ggfs. Titel der Dissertation in englischer
-    Sprache: ``Original title in English''}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% GIDiss: Titel- und Autoreninfos auf jeden Fall in der Präambel (vor
+%% \begin{document} setzen!
+%% Die Fußnote enthält die Adresse (Affiliation) sowie eine E-Mail-Adresse.
+\title[Kurztitel (optional, max. 65 Zeichen)]{Sehr langer Titel der Dissertation bzw. der Kurzfassung in
+  deutscher Sprache (ggfs. mehr als 65 Zeichen)\footnote{\todo[inlinewidth=.98\linewidth]{Wenn die Dissertation auf Englisch
+      verfasst wurde, Originaltitel anführen!}Englischer Titel der Dissertation: ``Original title in English''}}
 \author[Vorname Nachname]
-{Vorname Nachname\footnote{Universität, Abteilung, Straße, Postleitzahl Ort, Land \email{emailaddress@author1}}}
+{Vorname Nachname\footnote{Universität, Abteilung, Straße,
+    Postleitzahl Ort, Land \email{emailaddress@author1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
 
 \maketitle
+
+\todo{Falls der deutsche Titel mehr als 65 Zeichen umfasst, wird noch
+  ein gesonderter Kurztitel gebraucht: \texttt{\textbackslash title[<Kurztitel mit weniger oder gleich 65 Zeichen>]\{<Langtitel mit mehr als 65 Zeichen>\}}}
+
+\todo{Der Umfang muss genau 10 Seiten sein (inklusive Literatur und Lebenslauf).}
 
 \begin{abstract}
   \todo{
@@ -72,8 +102,6 @@
 \end{abstract}
 
 \section{Einleitung}
-
-\todo{Der Umfang muss genau 10 Seiten sein (inklusive Literatur und Lebenslauf).}
 
 \blindtext
 
@@ -177,9 +205,13 @@ und
 %% Starten Sie "biber paper", um eine Biliographie zu erzeugen.
 \printbibliography
 
+\todo{Den Schluss des Beitrags (hinter dem Literaturverzeichnis)
+bildet ein kurzer (ca. 1/3 Seite) Lebenslauf des Autors. Üblicherweise
+mit einem Portraitbild (4:5), auf der linken Seite, vom Text umflossen.}
 \begin{wrapfigure}{l}{.25\textwidth}
 \includegraphics[angle=90,origin=c,width=.25\textwidth]{example-image-empty}
 \end{wrapfigure}
-\noindent\todo{\textbf{Vorname Nachname} wurde am 1. Januar 1970 geboren.} \blindtext
+\noindent\textbf{Vorname Nachname} wurde am 1. Januar 1970
+geboren. \blindtext
 
 \end{document}
