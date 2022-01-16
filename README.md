@@ -8,7 +8,7 @@
 - In einer weiteren Fußnote zu Ihrem Namen sollten Sie Ihre Affiliation und Emailadresse als Kontaktdaten angeben.
 - Der Beitrag ist in LaTeX mit der Dokumentklasse [`lni`](https://github.com/gi-ev/LNI) zu erstellen. Es wird vorausgesetzt, dass von diesem Beispieldokument ausgegangen wird.
   - [LaTeX-Vorlage](https://github.com/nm-wu/GIDiss-Beispiel/releases/download/latest/GIDiss-Beispiel.zip)
-  - [Beispiel-PDF](https://github.com/nm-wu/GIDiss-Beispiel/releases/download/latest/GIDiss-Beispiel.zip)
+  - [Beispiel-PDF](https://github.com/nm-wu/GIDiss-Beispiel/releases/download/latest/gidiss-kurzfassung.pdf)
 - Der Umfang muss genau 10 Seiten sein (inklusive Literaturverzeichnis und Lebenslauf, sh. unten)
 - Am Beginn des Beitrags ist eine kurze Zusammenfassung ("Abstract", ca. 10 Zeilen).
 - Das Literaturverzeichnis muss eine Referenz auf die publizierte Dissertation enthalten.
