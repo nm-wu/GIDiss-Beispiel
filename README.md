@@ -17,6 +17,9 @@
   - Üblicherweise mit Porträtbild, auf der linken Seite, vom Text umflossen. 
   - Der Lebenslauf hat keinen Titel, beginnt jedoch mit dem fett gesetzten Namen des Autors.
   - Es empfielt sich ein fliessender Text für den Lebenslauf, d.h. keine Tabelle.
+- Vor Generierung der finalen Einreichfassung (spätestens) entfernen Sie die Dokumentenklassenoption `draft`:
+  - VORHER: `\documentclass[draft,utf8,biblatex,norunningheads]{lni}`
+  - NACHHER: `\documentclass[utf8,biblatex,norunningheads]{lni}`
 # Hinweise
 - [Allgemeine Richtlinien für LNI-AutorInnen](https://gi.de/fileadmin/GI/Hauptseite/Service/Publikationen/LNI/LNI-Autorenrichtlinien.docx)
 - [Leitfaden zur LNI-Dokumentenklasse](http://mirrors.ctan.org/macros/latex/contrib/lni/lni-instructions.pdf)
