@@ -14,7 +14,7 @@ pdf: ${FILE}.pdf
 all: pdf
 
 zip: ${FILE}.tex ${FILE}.bib
-	zip -j GIDiss-Beispiel.zip ${FILE}.tex ${FILE}.bib lni/lni.cls lni/lnig.bst
+	zip -j GIDiss-Beispiel.zip ${FILE}.tex ${FILE}.bib lni/lni.cls lni/lnig.bst README.md
 
 clean:
 	rm -f ${FILE}.ps
